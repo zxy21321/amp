@@ -37,20 +37,21 @@
         <div id="particles" style="position:absolute;top:0;bottom:0;left:0;right:0;"></div>
         <div class="container d-flex align-items-center flex-column">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2 class="text-secondary"><span id="curPrice_DOGE">1 Catcoin =</span>
-                        <div id="priceHolder"><span class="curPrice_USD">1 Catcoin</span></div>
-                    </h2>
-                </div>
+
                 <div class="col-md-12">
                     <!-- Masthead Subheading-->
                     <img class="masthead-avatar mb-1" style="margin-top:0rem;width: 100px;" src="assets/img/doge.png" alt="">
 
                     <p class="masthead-subheading font-weight-light text-secondary mb-0">Catcoin (猫猫币) 是一个基于以太坊ETH并使用 RandomX 算法的去中心化货币，与狗狗币不同的是，猫猫币总量有限， 每3年减半.</p><br>
+                    <h5 class="text-secondary">
+                        <P>预计上线价格：</P>
+                        <span id="curPrice_DOGE">1 Catcoin ≈</span>
+                        <div id="priceHolder"><span class="curPrice_USD">0.01 USDT</span></div>
+                    </h5>
                     <form method="get" action="preico.html">
-                        <span style="color:red;display:none;" id="tips">您输入的钱包地址无效</span>
+                        <span style="color:red;display:none;" id="tips">您输入的钱包地址无效</span><br>
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" name="eth" placeholder="输入ETH地址" id="radd" required="">
+                            <input type="text" class="form-control" name="eth" placeholder="点击输入ETH地址免费领取2000个" id="radd" required="">
                         </div>
                         <div class="btn-holder mt-4">
                             <button class="btn btn-secondary btn-lg js-scroll-trigger" type="submit" onclick="var len = document.getElementById('radd').value.length; if(len != 42 && len != 40){document.getElementById('tips').style.display='block';document.getElementById('radd').focus();return false}">领取 Catcoin</button>
