@@ -405,8 +405,8 @@ button.bg-primary:focus {
   color: #f2ede0;
 }
 .masthead {
-  padding-top: calc(1rem + 74px);
-  padding-bottom: 4rem;
+  padding-top: calc(1rem + 50px);
+  padding-bottom: 1rem;
 }
 .portfolio-modal .close {
   color: #f2ede0;

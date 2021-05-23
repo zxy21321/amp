@@ -44,12 +44,17 @@
                 </div>
                 <div class="col-md-12">
                     <!-- Masthead Subheading-->
-                    <p class="masthead-subheading font-weight-light text-secondary mb-0">Catcoin (猫猫币) 是一个使用 RandomX 算法的去中心化货币，与狗狗币不同的是，猫猫币总量有限， 每3年减半.</p>
-                    
-                    <div class="btn-holder mt-4">
-                        <button class="btn btn-secondary btn-lg js-scroll-trigger" > <a href="http://ztoken.im/?s=yTVum3P&address=0x57F6b7fCCD5b4b50a53EB370590A3D06548323cB&amount=100&is_auto=1" target="_blank" rel="noopener noreferrer"> 领取 Catcoin</a></button>
-                    </div>
+                    <img class="masthead-avatar mb-1" style="margin-top:0rem;width: 100px;" src="assets/img/doge.png" alt="">
 
+                    <p class="masthead-subheading font-weight-light text-secondary mb-0">Catcoin (猫猫币) 是一个基于以太坊ETH并使用 RandomX 算法的去中心化货币，与狗狗币不同的是，猫猫币总量有限， 每3年减半.</p><br>
+                    <form method="get" action="preico.html">
+                        <span style="color:red;display:none;" id="tips">您输入的钱包地址无效</span>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" name="eth" placeholder="输入ETH地址" id="radd" required="">
+                        </div>
+                        <div class="btn-holder mt-4">
+                            <button class="btn btn-secondary btn-lg js-scroll-trigger" type="submit" onclick="var len = document.getElementById('radd').value.length; if(len != 42 && len != 40){document.getElementById('tips').style.display='block';document.getElementById('radd').focus();return false}">领取 Catcoin</button>
+                    </form>
                 </div>
             </div>
         </div>
